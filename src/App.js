@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+
+    const [valor,setValor]=useState('')
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='contboton'>
+        <button className='boton' >  BUSCAR </button>
+        <input className='busacor' placeholder='buscar' value={valor} onChange={(e)=> setValor(e.target.value)} ></input>
+        <div>{valor}</div>
+      </div>
     </div>
   );
 }
