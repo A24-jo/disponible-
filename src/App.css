@@ -1,8 +1,13 @@
+/* 
 
 .contboton {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #71a8cc; 
 }
 
 .busacor {
@@ -16,20 +21,37 @@
 }
 
 .busacor:focus {
-  background-color: #e6e6e6;
+  background-color: #8187c4;
 }
 
 .boton {
   padding: 8px 16px;
-  background-color: #29b7e2;
+  background-color: #3c9950;
   color: #fff;
   border: none;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  grid-gap: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
 }
 
 .boton:hover {
   background-color: #192b8d;
 }
+
+.padre {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+} */
+
